@@ -3,10 +3,14 @@
 
 #include "pch.h"
 #include <iostream>
+#include <DLL.h>
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	const std::string student_full_name = get_group_credentials();
+    std::cout << student_full_name;
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
