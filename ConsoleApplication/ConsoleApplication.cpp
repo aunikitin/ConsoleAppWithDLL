@@ -9,6 +9,7 @@ int main()
 {
 	const std::string student_full_name = get_group_credentials();
     std::cout << student_full_name;
+	std::cin.get();
 
 	return 0;
 }
