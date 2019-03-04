@@ -2,14 +2,28 @@
 //
 
 #include "pch.h"
+#include <windows.h>
 #include <iostream>
-#include <DLL.h>
+#include <string>
+
+typedef std::string(__cdecl *MYPROC)();
 
 int main()
 {
-	const std::string student_full_name = get_group_credentials();
-    std::cout << student_full_name;
-	std::cin.get();
+	const HINSTANCE hinst_lib = LoadLibrary(L"DLL.dll");
+	if(hinst_lib != nullptr)
+	{
+		const auto proc_add = MYPROC(GetProcAddress(hinst_lib, "get_group_credentials"));
+		
+		if(proc_add != nullptr)
+		{
+			const std::string test = (*proc_add)();
+			std::cout << test;
+			std::cin.get();
+		}
+
+		FreeLibrary(hinst_lib);
+	}
 
 	return 0;
 }

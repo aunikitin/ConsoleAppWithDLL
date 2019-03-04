@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "DLL.h"
+#include <string>
 
 std::string get_group_credentials()
 {

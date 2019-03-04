@@ -1,8 +1,4 @@
-﻿  stdafx.cpp
-  DLL.cpp
-f:\stuff\visualstudio\source\repos\consoleappwithdll\dll\dll.h(10): warning C4190: 'get_group_credentials' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
+﻿  DLL.cpp
+f:\stuff\visualstudio\source\repos\consoleappwithdll\dll\dll.h(11): warning C4190: 'get_group_credentials' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
   h:\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  dllmain.cpp
-  Generating Code...
-     Creating library F:\stuff\VisualStudio\source\repos\ConsoleAppWithDLL\Debug\DLL.lib and object F:\stuff\VisualStudio\source\repos\ConsoleAppWithDLL\Debug\DLL.exp
   DLL.vcxproj -> F:\stuff\VisualStudio\source\repos\ConsoleAppWithDLL\Debug\DLL.dll
